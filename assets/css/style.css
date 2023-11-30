@@ -1,0 +1,111 @@
+/* Base HTML elements styling */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif; /* Consistent font for the whole page */
+    background: #f4f4f4; /* Light background for the body */
+}
+
+/* Flexbox layout for the body to handle the structure */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensures body takes at least the viewport height */
+}
+
+/* Header styling */
+header {
+    background-color: #323232;
+    color:  rgba(203, 203, 203, 0.86);
+    padding: 0; /* Height of Header */
+    display: grid;
+    grid-template-columns: 1fr auto 1fr; /* Three columns with equal width */
+    align-items: center;
+    position: sticky;
+    top: 0; /* Stick to the top of the viewport */
+    z-index: 100; /* Ensure it appears above other content */
+}
+
+/* Align the main header text to the left */
+header h1 {
+    margin-left: 25px;
+    font-size: 16px; /* Adjust the font size as needed */
+    grid-column: 1; /* Place it in the first column */
+}
+
+/* Navigation container */
+nav {
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+}
+
+/* Navigation list */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Individual navigation items */
+nav ul li {
+    display: inline-block; /* Display the list items inline */
+    margin: 0 10px; /* Adjust spacing between items */
+}
+
+/* Navigation links */
+nav a {
+    color: rgba(203, 203, 203, 0.86);
+    text-decoration: none;
+    font-size: 12px; /* Adjust the font size as needed */
+    font-weight: normal;
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+nav a:hover {
+    color: #ddd;
+}
+
+/* Footer styling */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+}
+
+/* Hero Block Styles */
+.hero {
+    position: relative;
+    text-align: center;
+    color: black;
+}
+
+.hero-image {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    opacity: 0.7; /* Optional: Add transparency to the image */
+}
+
+.hero-content {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the content */
+    padding: 0px; /* Adjust padding as needed */
+}
+
+.hero-content h1 {
+    font-size: 40px;
+
+}
+
+.hero-content h2 {
+    font-size: 30px;
+    font-weight: lighter;
+}
+
+.hero-content a {
+    font-size: 20px;
+}
