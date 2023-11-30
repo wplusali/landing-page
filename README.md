@@ -82,9 +82,28 @@ Refer to the documentation:
 
 If you have completed this activity, work through the following challenge with your group to further your knowledge:
 
-* How can CSS be used to apply a different style to an `<a>` element when a cursor points at it?
+## How can CSS be used to apply a different style to an `<a>` element when a cursor points at it?
 
-Use [Google](https://www.google.com) or another search engine to research this.
+You can use CSS to apply a different style to an `<a>` (anchor) element when a cursor points at it by using the `:hover` pseudo-class. Here's how you can do it:
+
+```css
+a:hover {
+    /* Your CSS styles for the anchor element when hovered go here */
+    color: red; /* For example, change the text color to red */
+    text-decoration: underline; /* Add underline when hovered */
+    /* Add any other styles you want */
+}
+```
+
+In the above CSS code, `a:hover` selects all `<a>` elements when the cursor is pointing at them (i.e., when they are hovered). You can then apply various styles like changing the text color, adding an underline, changing the background color, etc., within the curly braces to define how the anchor element should appear when hovered.
+
+Here's an example of how this CSS would work with an HTML `<a>` element:
+
+```html
+<a href="https://example.com">Hover over me</a>
+```
+
+When you hover your cursor over the "Hover over me" link, the styles defined in the `a:hover` CSS rule will be applied, giving visual feedback to the user that the link is interactive.
 
 ---
 
